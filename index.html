@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>skidstreet</title>
+        <link rel="icon" href="skeleton.png">
+        <link rel="stylesheet" href="./style/style.css">
+		<script src="./style/script.js"></script>
+    </head>
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Inconsolata');
+    body {
+    font-family: 'Inconsolata', monospace;
+    
+    html { 
+  background:  url(https://media.giphy.com/media/eR7OEDQDyA7Cg/giphy.gif) no-repeat center center fixed; 
+  background-size: cover;
+}
+    </style>
+    
+    <body>
+    <br>
+    <div id="screen">
+    <div id="time"></div>
+    	<br>
+    	<hr>
+        <p>Tuesday, September 11, 2011</p>
+        <hr>
+        <br>
+        <div id="title">
+         skidstreet 
+            </div>
+            <br>
+            
+                    <hr>
+                        <div id="membersList" class="scrollbar">
+                        <a href="https://twitter.com/boozeflow" target="_blank">kylie</a><br>
+                        <a href="https://twitter.com/0xdexter" target="_blank">dexter</a><br>
+                    </div>
+               
+                <hr>
+            </div>
+    
+
+        <script>
+  var sound = new Array();
+  sound[0]= "./music/1.mp3"
+  sound[1]= "./music/2.mp3"
+  sound[2]= "./music/3.mp3"
+  sound[3]= "./music/4.mp3"
+	
+
+  var randomsound = Math.floor(Math.random() * 5);
+  document.write ('<audio id="sound" loop autoplay preload><source src= "' + sound[randomsound] + '" hidden=true type="audio/mpeg" autostart=true loop=true>')
+  
+  </script>
+  
+  <script>
+var video = document.currentScript.parentElement;
+video.volume = 0.10;
+</script>
+    
+    </body>
+</html>
